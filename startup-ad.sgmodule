@@ -139,3 +139,68 @@ DOMAIN,adm.zhangyuyidong.cn,REJECT
 # ===== 其他广告网络 =====
 DOMAIN,c.etoolads.cn,REJECT
 DOMAIN,adx-track.domob.cn,REJECT
+
+# ==================================================
+# 2026-10-06 03:31 抓包新增
+# ==================================================
+
+# ===== 腾讯广点通补充 =====
+DOMAIN,sdkquic.e.qq.com,REJECT
+DOMAIN,v2.gdt.qq.com,REJECT
+
+# ===== Gameley 广告 =====
+DOMAIN-SUFFIX,ad.gameley.com,REJECT
+
+# ===== 美图广告 =====
+DOMAIN,adui.tg.meitu.com,REJECT
+
+# ===== Tianmu / Beizi 广告 SDK =====
+DOMAIN,sdk.tianmu.mobi,REJECT
+DOMAIN,tracker.tianmu.mobi,REJECT
+DOMAIN,sdk.beizi.biz,REJECT
+
+# ===== HubCloud / 66Mobi / MapleHaze =====
+DOMAIN,sdktmp.hubcloud.com.cn,REJECT
+DOMAIN,sdk-track.66mobi.com,REJECT
+DOMAIN,ssp.maplehaze.cn,REJECT
+
+# ===== 极光 Adpub =====
+DOMAIN,ssp-sdk-api.jiguang.cn,REJECT
+DOMAIN,ssp-sdk-status.jiguang.cn,REJECT
+
+# ===== 其他广告竞价 / SSP =====
+DOMAIN,ax.admobile.top,REJECT
+DOMAIN,monitor.ssp.coolpush.cn,REJECT
+DOMAIN,adx.guangshiting.top,REJECT
+DOMAIN,bid.luciabid.com,REJECT
+DOMAIN,adprolink.xwpbj.com,REJECT
+
+# ===== AnyThink 补充 =====
+DOMAIN,api.anythinktech.com,REJECT
+DOMAIN,tk.anythinktech.com,REJECT
+
+# ===== 网易云音乐广告素材补充 =====
+DOMAIN,iadmusicmatvideo.music.126.net,REJECT
+DOMAIN,iadmatapk.nosdn.127.net,REJECT
+
+# ===== 携程广告 =====
+DOMAIN,ma-adx.ctrip.com,REJECT
+
+# ===== 微博广告 =====
+DOMAIN,adstrategy.biz.weibo.com,REJECT
+DOMAIN,sdkclick.biz.weibo.com,REJECT
+DOMAIN,kadmimage.biz.weibo.com,REJECT
+
+# ===== 懂车帝广告素材 =====
+DOMAIN,v11-dcar-ad.dcarvod.com,REJECT
+DOMAIN,v26-dcar-ad.dcarvod.com,REJECT
+
+# ===== 美团 DSP 广告 =====
+DOMAIN,impdsp.meituan.com,REJECT
+
+# ===== Google 广告 =====
+DOMAIN,pubads.g.doubleclick.net,REJECT
+
+# ===== FancyDSP 配置 =====
+DOMAIN,mpcfg.fancydsp.com,REJECT
+
