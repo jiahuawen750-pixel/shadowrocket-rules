@@ -1,0 +1,141 @@
+#!name=开屏广告拦截
+#!desc=基于实际抓包整理｜Shadowrocket 精准广告拦截｜持续更新
+#!system=ios
+
+[Rule]
+
+# ===== 菜鸟：1RTB / UBIX =====
+DOMAIN-SUFFIX,1rtb.net,REJECT
+DOMAIN-SUFFIX,ubixioe.com,REJECT
+
+# ===== 穿山甲 / Pangle =====
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT
+DOMAIN-SUFFIX,pangolin-sdk-toutiao1.com,REJECT
+DOMAIN-SUFFIX,pangolin-sdk-toutiao-b.com,REJECT
+DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
+
+# ===== 腾讯广点通 / 优量汇 =====
+DOMAIN,mi.gdt.qq.com,REJECT
+DOMAIN,v2mi.gdt.qq.com,REJECT
+DOMAIN,v3.gdt.qq.com,REJECT
+DOMAIN,c3.gdt.qq.com,REJECT
+DOMAIN,win.gdt.qq.com,REJECT
+DOMAIN,adsmind.ugdtimg.com,REJECT
+
+# ===== 车来了 =====
+DOMAIN-SUFFIX,yg84.com,REJECT
+
+# ===== 网易云音乐广告素材 =====
+DOMAIN,iadmusicmat.music.126.net,REJECT
+DOMAIN,iadmat.nosdn.127.net,REJECT
+DOMAIN,canvas-cdn.gdt.qq.com,REJECT
+
+# ===== 知乎 =====
+DOMAIN,adsmartget.guangtuikeji.com,REJECT
+
+# ===== 百度广告 =====
+DOMAIN,mobads.baidu.com,REJECT
+DOMAIN,mobads-logs.baidu.com,REJECT
+DOMAIN,mobads-pre-config.cdn.bcebos.com,REJECT
+DOMAIN,afd.baidu.com,REJECT
+DOMAIN,afdconf.baidu.com,REJECT
+
+# ===== Sigmob =====
+DOMAIN,adservice.sigmob.cn,REJECT
+DOMAIN,dc.sigmob.cn,REJECT
+
+# ===== Tanx =====
+DOMAIN,df.tanx.com,REJECT
+DOMAIN,bdlog.tanx.com,REJECT
+
+# ===== ADN Plus =====
+DOMAIN,mediation-cfg.adn-plus.com.cn,REJECT
+
+# ===== 推啊 / HubCloud =====
+DOMAIN,tuia-adx-web.tuia.cn,REJECT
+DOMAIN,v.adx.hubcloud.com.cn,REJECT
+
+# ===== Advlion =====
+DOMAIN,bj-td-03-callback.advlion.com,REJECT
+DOMAIN,td-nexus.advlion.com,REJECT
+
+# ===== 旺脉广告 =====
+DOMAIN,sdk.adx.adwangmai.com,REJECT
+DOMAIN,sdk-cfg.adx.adwangmai.com,REJECT
+
+# ===== StatisticsLinks / 酷盈 =====
+DOMAIN,adx-strategy-api-cn.statisticslinks.com,REJECT
+DOMAIN,adx-micro.statisticslinks.com,REJECT
+
+# ===== VLion =====
+DOMAIN,bid-adx2.vlion.cn,REJECT
+
+
+# ==================================================
+# 2026-09-20 抓包新增
+# ==================================================
+
+# ===== 腾讯广点通 =====
+DOMAIN,xs.gdt.qq.com,REJECT
+DOMAIN,rpt.gdt.qq.com,REJECT
+DOMAIN,pgdt.gtimg.cn,REJECT
+
+# ===== Advlion =====
+DOMAIN,bj-td-menta-01-callback.advlion.com,REJECT
+
+
+# ==================================================
+# 2026-10-06 抓包新增
+# ==================================================
+
+# ===== 腾讯广点通广告 SDK =====
+DOMAIN,sdk.e.qq.com,REJECT
+DOMAIN,sdkreport.e.qq.com,REJECT
+DOMAIN,a.gdt.qq.com,REJECT
+DOMAIN,ipv4.gdt.qq.com,REJECT
+
+# ===== Sigmob =====
+DOMAIN,n.sigmob.cn,REJECT
+DOMAIN,tm.sigmob.cn,REJECT
+
+# ===== ADN Plus =====
+DOMAIN,ad-api.adn-plus.com.cn,REJECT
+DOMAIN,adx-track.adn-plus.com.cn,REJECT
+DOMAIN,ssp-track.adn-plus.com.cn,REJECT
+
+# ===== TopOn / AnyThink 广告聚合 =====
+DOMAIN,mores.toponad.com,REJECT
+DOMAIN,adx-bj.anythinktech.com,REJECT
+DOMAIN,adx-bj-req.anythinktech.com,REJECT
+
+# ===== MentaMob =====
+DOMAIN,api-v3.mentamob.com,REJECT
+DOMAIN,api-nxs-v4.mentamob.com,REJECT
+
+# ===== 趣盟广告 SDK =====
+DOMAIN,cpc-service-square.yunxish.com,REJECT
+DOMAIN,api.yunxish.com,REJECT
+DOMAIN,usr-api.yunxish.com,REJECT
+DOMAIN,logrcv.yunxish.com,REJECT
+DOMAIN,tracelog-debug.yunxish.com,REJECT
+
+# ===== 酷盈广告 =====
+DOMAIN,da.statisticslinks.com,REJECT
+DOMAIN,tk.statisticslinks.com,REJECT
+
+# ===== Fancy 广告链路 =====
+DOMAIN,g.fancyapi.com,REJECT
+DOMAIN,sdkg.fancyapi.com,REJECT
+DOMAIN,t2.fancyapi.com,REJECT
+DOMAIN,lftxali.fancyapi.com,REJECT
+DOMAIN,pic.fancyapi.com,REJECT
+DOMAIN,static.fancyapi.com,REJECT
+
+# ===== 掌娱移动广告 =====
+DOMAIN,sdk.zhangyuyidong.cn,REJECT
+DOMAIN,sdklog.zhangyuyidong.cn,REJECT
+DOMAIN,adm.zhangyuyidong.cn,REJECT
+
+# ===== 其他广告网络 =====
+DOMAIN,c.etoolads.cn,REJECT
+DOMAIN,adx-track.domob.cn,REJECT
