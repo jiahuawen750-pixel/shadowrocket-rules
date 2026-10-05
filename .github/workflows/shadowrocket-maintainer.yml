@@ -1,0 +1,76 @@
+name: Shadowrocket Rule Maintainer
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  update-rules:
+    if: >
+      github.event.issue.user.login == github.repository_owner &&
+      startsWith(github.event.issue.title, '[SR-UPDATE]')
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Extract module from issue
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: |
+          python - <<'PY'
+          import os
+          import re
+          from pathlib import Path
+
+          body = os.environ["ISSUE_BODY"]
+
+          match = re.search(
+              r"```(?:ini)?\s*\n(.*?)\n```",
+              body,
+              re.S
+          )
+
+          if not match:
+              raise SystemExit("No module content found")
+
+          content = match.group(1).strip()
+
+          if "#!name=" not in content:
+              raise SystemExit("Missing module name")
+
+          if "[Rule]" not in content:
+              raise SystemExit("Missing [Rule] section")
+
+          Path("startup-ad.sgmodule").write_text(
+              content + "\n",
+              encoding="utf-8"
+          )
+          PY
+
+      - name: Commit rule update
+        run: |
+          git config user.name "shadowrocket-rules-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add startup-ad.sgmodule
+
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+
+          git commit -m "Update Shadowrocket ad-block rules"
+          git push
+
+      - name: Close update issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue close "${{ github.event.issue.number }}" \
+            --comment "Shadowrocket rules updated successfully."
