@@ -204,3 +204,29 @@ DOMAIN,pubads.g.doubleclick.net,REJECT
 # ===== FancyDSP 配置 =====
 DOMAIN,mpcfg.fancydsp.com,REJECT
 
+# ==================================================
+# 2026-10-08 日志增量
+# ==================================================
+
+# ===== 字节跳动广告素材 / 接口 =====
+DOMAIN,p3-ad-sign.byteimg.com,REJECT
+DOMAIN,p9-ad-sign.byteimg.com,REJECT
+DOMAIN,lf3-ad.searchpstatp.com,REJECT
+DOMAIN,ad.zijieapi.com,REJECT
+
+# ===== 小红书广告素材 =====
+DOMAIN,ads-img-al.xhscdn.com,REJECT
+DOMAIN,ads-vp5.xhscdn.com,REJECT
+
+# ===== 转转广告 =====
+DOMAIN,ad.zhuanzhuan.com,REJECT
+
+# ===== Tanx 东风广告监测 =====
+DOMAIN,ef-dongfeng.tanx.com,REJECT
+
+# ===== 极光广告统计 =====
+DOMAIN,report-stats.ad.jiguang.cn,REJECT
+
+# ===== 第三方广告服务器 =====
+DOMAIN,ads.adxadserv.com,REJECT
+
