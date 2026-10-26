@@ -230,3 +230,33 @@ DOMAIN,report-stats.ad.jiguang.cn,REJECT
 # ===== 第三方广告服务器 =====
 DOMAIN,ads.adxadserv.com,REJECT
 
+# ==================================================
+# 2026-10-21 ~ 2026-10-26 三份日志增量
+# ==================================================
+
+# ===== 字节跳动广告素材 / 接口 =====
+DOMAIN,p3-ad-aweme.byteimg.com,REJECT
+DOMAIN,ads5-normal-lf.zijieapi.com,REJECT
+DOMAIN,ads5-normal-hj.zijieapi.com,REJECT
+
+# ===== Tanx 广告链路补充 =====
+DOMAIN,ifs.tanx.com,REJECT
+DOMAIN,kgb-ifs.tanx.com,REJECT
+DOMAIN,rdstat.tanx.com,REJECT
+DOMAIN,et.tanx.com,REJECT
+
+# ===== 滴滴广告追踪 =====
+DOMAIN,adtrack.xiaojukeji.com,REJECT
+
+# ===== Google / DoubleClick 广告统计 =====
+DOMAIN,stats.g.doubleclick.net,REJECT
+
+
+[URL Rewrite]
+
+# ===== 车来了：仅拦广告分析接口 =====
+^http://atrace\.chelaile\.net\.cn/adAnalysis - reject
+
+# ===== 养基宝：仅拦开屏广告海报 =====
+^http://imgcdn\.yangjibao\.com/upload/ad_poster/ - reject
+
