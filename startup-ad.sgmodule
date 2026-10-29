@@ -259,4 +259,8 @@ DOMAIN,stats.g.doubleclick.net,REJECT
 
 # ===== 养基宝：仅拦开屏广告海报 =====
 ^http://imgcdn\.yangjibao\.com/upload/ad_poster/ - reject
-
+# ==================================================
+# 2026-10-28 日志新增：小红书广告素材
+# ==================================================
+DOMAIN,ads-img-bak.xhscdn.com,REJECT
+DOMAIN,ads-video-al.xhscdn.com,REJECT
