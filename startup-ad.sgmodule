@@ -4,6 +4,16 @@
 
 [Rule]
 
+# ==================================================
+# 2026-11-12 稳定性优化：广告平台专用域名后缀
+# 仅覆盖明确用于广告投放的专用域名，不扩大到业务主域名
+# ==================================================
+DOMAIN-SUFFIX,shenshiads.com,REJECT
+DOMAIN-SUFFIX,adkwai.com,REJECT
+DOMAIN-SUFFIX,adn-plus.com.cn,REJECT
+DOMAIN-SUFFIX,sigmob.cn,REJECT
+
+
 # ===== 菜鸟：1RTB / UBIX =====
 DOMAIN-SUFFIX,1rtb.net,REJECT
 DOMAIN-SUFFIX,ubixioe.com,REJECT
