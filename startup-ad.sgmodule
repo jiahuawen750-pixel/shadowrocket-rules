@@ -2,6 +2,11 @@
 #!desc=基于实际抓包整理｜Shadowrocket 精准广告拦截｜持续更新
 #!system=ios
 
+# # 2026-11-12 维护说明
+# 专用广告平台采用 DOMAIN-SUFFIX，覆盖其新子域名。
+# 业务混合域名仍使用 DOMAIN 精确匹配，避免误伤正常接口。
+# URL Rewrite 仅适用于可见的 HTTP 请求；HTTPS 路径匹配需要相应解密配置。
+
 [Rule]
 
 # ==================================================
@@ -51,15 +56,12 @@ DOMAIN,afd.baidu.com,REJECT
 DOMAIN,afdconf.baidu.com,REJECT
 
 # ===== Sigmob =====
-DOMAIN,adservice.sigmob.cn,REJECT
-DOMAIN,dc.sigmob.cn,REJECT
 
 # ===== Tanx =====
 DOMAIN,df.tanx.com,REJECT
 DOMAIN,bdlog.tanx.com,REJECT
 
 # ===== ADN Plus =====
-DOMAIN,mediation-cfg.adn-plus.com.cn,REJECT
 
 # ===== 推啊 / HubCloud =====
 DOMAIN,tuia-adx-web.tuia.cn,REJECT
@@ -105,13 +107,8 @@ DOMAIN,a.gdt.qq.com,REJECT
 DOMAIN,ipv4.gdt.qq.com,REJECT
 
 # ===== Sigmob =====
-DOMAIN,n.sigmob.cn,REJECT
-DOMAIN,tm.sigmob.cn,REJECT
 
 # ===== ADN Plus =====
-DOMAIN,ad-api.adn-plus.com.cn,REJECT
-DOMAIN,adx-track.adn-plus.com.cn,REJECT
-DOMAIN,ssp-track.adn-plus.com.cn,REJECT
 
 # ===== TopOn / AnyThink 广告聚合 =====
 DOMAIN,mores.toponad.com,REJECT
@@ -266,12 +263,6 @@ DOMAIN,stats.g.doubleclick.net,REJECT
 # ==================================================
 
 # ===== 神狮广告 SDK =====
-DOMAIN,open-set-api.shenshiads.com,REJECT
-DOMAIN,service.shenshiads.com,REJECT
-DOMAIN,adv-api.shenshiads.com,REJECT
-DOMAIN,log-gw1.shenshiads.com,REJECT
-DOMAIN,adx-prod-imp.shenshiads.com,REJECT
-DOMAIN,fpvideo.shenshiads.com,REJECT
 
 # ===== 小红书广告素材 =====
 DOMAIN,ads-i1.xhscdn.com,REJECT
@@ -279,7 +270,6 @@ DOMAIN,ads-i3.xhscdn.com,REJECT
 
 # ===== 其他广告网络 =====
 DOMAIN,c.tobidad.cn,REJECT
-DOMAIN,p66-ad.adkwai.com,REJECT
 DOMAIN,adsmartget.datads.cn,REJECT
 DOMAIN,mkt-advertisement.tuhu.cn,REJECT
 
