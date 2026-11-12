@@ -251,6 +251,31 @@ DOMAIN,adtrack.xiaojukeji.com,REJECT
 # ===== Google / DoubleClick 广告统计 =====
 DOMAIN,stats.g.doubleclick.net,REJECT
 
+# ==================================================
+# 2026-11-10 ~ 2026-11-11 抓包增量（并修正 10-28 规则位置）
+# ==================================================
+
+# ===== 神狮广告 SDK =====
+DOMAIN,open-set-api.shenshiads.com,REJECT
+DOMAIN,service.shenshiads.com,REJECT
+DOMAIN,adv-api.shenshiads.com,REJECT
+DOMAIN,log-gw1.shenshiads.com,REJECT
+DOMAIN,adx-prod-imp.shenshiads.com,REJECT
+DOMAIN,fpvideo.shenshiads.com,REJECT
+
+# ===== 小红书广告素材 =====
+DOMAIN,ads-i1.xhscdn.com,REJECT
+DOMAIN,ads-i3.xhscdn.com,REJECT
+
+# ===== 其他广告网络 =====
+DOMAIN,c.tobidad.cn,REJECT
+DOMAIN,p66-ad.adkwai.com,REJECT
+DOMAIN,adsmartget.datads.cn,REJECT
+DOMAIN,mkt-advertisement.tuhu.cn,REJECT
+
+# ===== 2026-10-28 规则位置修复 =====
+DOMAIN,ads-img-bak.xhscdn.com,REJECT
+DOMAIN,ads-video-al.xhscdn.com,REJECT
 
 [URL Rewrite]
 
@@ -259,8 +284,4 @@ DOMAIN,stats.g.doubleclick.net,REJECT
 
 # ===== 养基宝：仅拦开屏广告海报 =====
 ^http://imgcdn\.yangjibao\.com/upload/ad_poster/ - reject
-# ==================================================
-# 2026-10-28 日志新增：小红书广告素材
-# ==================================================
-DOMAIN,ads-img-bak.xhscdn.com,REJECT
-DOMAIN,ads-video-al.xhscdn.com,REJECT
+
