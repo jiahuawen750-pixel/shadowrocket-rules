@@ -2,7 +2,7 @@
 #!desc=基于实际抓包整理｜Shadowrocket 精准广告拦截｜持续更新
 #!system=ios
 
-# # 2026-11-12 维护说明
+# 2026-11-12 维护说明
 # 专用广告平台采用 DOMAIN-SUFFIX，覆盖其新子域名。
 # 业务混合域名仍使用 DOMAIN 精确匹配，避免误伤正常接口。
 # URL Rewrite 仅适用于可见的 HTTP 请求；HTTPS 路径匹配需要相应解密配置。
@@ -17,6 +17,10 @@ DOMAIN-SUFFIX,shenshiads.com,REJECT
 DOMAIN-SUFFIX,adkwai.com,REJECT
 DOMAIN-SUFFIX,adn-plus.com.cn,REJECT
 DOMAIN-SUFFIX,sigmob.cn,REJECT
+DOMAIN-SUFFIX,mentamob.com,REJECT
+DOMAIN-SUFFIX,toponad.com,REJECT
+DOMAIN-SUFFIX,adx.adwangmai.com,REJECT
+DOMAIN-SUFFIX,statisticslinks.com,REJECT
 
 
 # ===== 菜鸟：1RTB / UBIX =====
@@ -72,12 +76,8 @@ DOMAIN,bj-td-03-callback.advlion.com,REJECT
 DOMAIN,td-nexus.advlion.com,REJECT
 
 # ===== 旺脉广告 =====
-DOMAIN,sdk.adx.adwangmai.com,REJECT
-DOMAIN,sdk-cfg.adx.adwangmai.com,REJECT
 
 # ===== StatisticsLinks / 酷盈 =====
-DOMAIN,adx-strategy-api-cn.statisticslinks.com,REJECT
-DOMAIN,adx-micro.statisticslinks.com,REJECT
 
 # ===== VLion =====
 DOMAIN,bid-adx2.vlion.cn,REJECT
@@ -111,13 +111,10 @@ DOMAIN,ipv4.gdt.qq.com,REJECT
 # ===== ADN Plus =====
 
 # ===== TopOn / AnyThink 广告聚合 =====
-DOMAIN,mores.toponad.com,REJECT
 DOMAIN,adx-bj.anythinktech.com,REJECT
 DOMAIN,adx-bj-req.anythinktech.com,REJECT
 
 # ===== MentaMob =====
-DOMAIN,api-v3.mentamob.com,REJECT
-DOMAIN,api-nxs-v4.mentamob.com,REJECT
 
 # ===== 趣盟广告 SDK =====
 DOMAIN,cpc-service-square.yunxish.com,REJECT
@@ -127,8 +124,6 @@ DOMAIN,logrcv.yunxish.com,REJECT
 DOMAIN,tracelog-debug.yunxish.com,REJECT
 
 # ===== 酷盈广告 =====
-DOMAIN,da.statisticslinks.com,REJECT
-DOMAIN,tk.statisticslinks.com,REJECT
 
 # ===== Fancy 广告链路 =====
 DOMAIN,g.fancyapi.com,REJECT
